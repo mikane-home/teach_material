@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* ---------------------
+    - 1. common setting 
+    - 2. header
+    - 3. main
+    - 4. footer
+--------------------- */
+
+/* =====================
+  1. common setting
+===================== */
+body {
+  font-family: 'Noto Sans JP' !important;
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* 1.1 material design / typography */
+h5 {
+  font-size: 1.5rem !important;
+}
+
+h6 {
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+}
+
+.subtitle1 {
+  font-size: 1rem;
+}
+
+.subtitle2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.body1 {
+  font-size: 1rem;
+}
+
+.body2 {
+  font-size: 0.875rem;
+}
+
+.button {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.overline {
+  font-size: 0.625rem;
+}
+
+
+/* =====================
+  2. header
+===================== */
+header {
+  height: 64px;
+  background-color: #ff9800;
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 24px;
+  line-height: 64px;
+}
+
+/* =====================
+  3. main
+===================== */
+main {
+  background-color: #F5F5F5;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.row:before {
+  content: '';
+  position: absolute;
+  width: 760px;
+  border-top: 4px solid #ff9800;
+  margin-top: 60px;
+}
+
+.number-box {
+  height: 120px;
+  width: 120px;
+  background-color: #000;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.40);
+  margin: 0px 40px 80px 0px;
+  z-index: 10;
+}
+
+.number-box :hover {
+}
+
+.number-box p {
+  background-color: #FFFFFF;
+  width: 120px;
+  font-size: 64px;
+  text-align: center;
+  line-height: 120px;
+}
+
+.first {
+  background-color: #ffeb3b;
+}
+
+.second {
+  background-color: #4caf50;
+}
+
+.third {
+  background-color: #ff5722;
+}
+
+.forth {
+  background-color: #2196f3;
+}
+
+
+
+/* =====================
+  4. footer
+===================== */
+footer {
+  height: 64px;
+  width: 100%;
+  background-color: #ffc947;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  line-height: 64px;
+}
