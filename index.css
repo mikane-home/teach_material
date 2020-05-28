@@ -60,6 +60,7 @@ h6 {
 ===================== */
 header {
   height: 64px;
+  width: 100%;
   background-color: #ff9800;
   color: rgba(0, 0, 0, 0.87);
   padding-left: 24px;
@@ -76,6 +77,7 @@ main {
   text-align: center;
   margin: auto;
   padding-top: 40px;
+  overflow: scroll;
 }
 
 .row {
@@ -85,14 +87,14 @@ main {
 .row:before {
   content: '';
   position: absolute;
-  width: 760px;
+  width: 660px;
   border-top: 4px solid #ff9800;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .number-box {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background-color: #000;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.40);
@@ -101,14 +103,15 @@ main {
 }
 
 .number-box :hover {
+  opacity: 0.8;
 }
 
 .number-box p {
   background-color: #FFFFFF;
-  width: 120px;
+  width: 100%;
   font-size: 64px;
   text-align: center;
-  line-height: 120px;
+  line-height: 100px;
 }
 
 .first {
@@ -128,7 +131,6 @@ main {
 }
 
 
-
 /* =====================
   4. footer
 ===================== */
@@ -136,7 +138,7 @@ footer {
   height: 64px;
   width: 100%;
   background-color: #ffc947;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0px;
   text-align: center;
   line-height: 64px;
