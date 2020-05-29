@@ -23,6 +23,11 @@ p {
   font-size: 16px;
 }
 
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
 /* 1.1 material design / typography */
 h5 {
   font-size: 1.5rem !important;
@@ -60,11 +65,27 @@ h6 {
 ===================== */
 header {
   height: 64px;
-  width: 100%;
   background-color: #ff9800;
   color: rgba(0, 0, 0, 0.87);
-  padding-left: 24px;
+  padding: 0 24px;
   line-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* =====================
